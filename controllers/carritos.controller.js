@@ -1,4 +1,4 @@
-const {DaoFactoryCart, DaoFactoryProduct} =require("../src/utils/databases/services/daoFactory")
+const {DaoFactoryCart, DaoFactoryProduct} =require("../src/services/daoFactory")
 const daoFactoryCart = new DaoFactoryCart();
 const Cart = daoFactoryCart.createDao();
 

@@ -10,7 +10,6 @@ const os = require("os");
 const cluster = require("cluster");
 const cpus = os.cpus();
 const isCluster = process.argv[3] == "cluster";
-const {productosApi, carritossApi} = require("./src/utils/databases/services/index.daos");
 const passport = require("passport");
 const initPassport = require( './src/passport/init')
 const routes = require('./routes/routes')
@@ -91,17 +90,5 @@ connectedServer.on('error', error => logger.error(`Error en servidor ${error}`))
 }
 
 
-/*------------- SOCKET.IO-----------------------*/
-
-io.on('connection', async socket => {
-
-    //Tabla de productos introducidos
-
-    socket.emit( 'productos', await productosApi.getAll());
-    socket.on('update', producto => {
-        productosApi.save(producto)
-        io.sockets.emit('productos', productosApi.getAll());
-    })    
-})
 
 

@@ -1,6 +1,5 @@
 const Cart = require("../models/carrito.model");
-const CustomError = require("../../CustomError")
-const {sendWhatsApp }=require('../../../twilio')
+const CustomError = require("../utils/CustomError")
 
 
 let instance;
@@ -86,7 +85,7 @@ class CartMongoDAO {
       try{
           const orderArray = cart.productos
           const order = JSON.stringify(orderArray);
-          await sendWhatsApp(order, user)
+          await transporter(order, user)
           await cart.updateOne({ $set: { productos: [] } })
       }catch (error) {
           throw new Error(`${error}`)

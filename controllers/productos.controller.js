@@ -1,4 +1,4 @@
-const {DaoFactoryProduct} =require("../src/utils/databases/services/daoFactory")
+const {DaoFactoryProduct} =require("../src/services/daoFactory")
 const daoFactoryProduct = new DaoFactoryProduct();
 const Product = daoFactoryProduct.createDao();
 const logger = require("../src/utils/logs/logger")

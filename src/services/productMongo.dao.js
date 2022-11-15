@@ -1,5 +1,5 @@
 const Product = require("../models/producto.model");
-const CustomError = require("../../CustomError")
+const CustomError = require("../utils/CustomError")
 
 
 let instance;
