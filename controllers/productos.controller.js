@@ -30,11 +30,14 @@ class ProductsController {
 
     async updateProducts(req, res) {
         res.json(await Product.updateProducts(req.body, req.params.id))
-}
+    }
 
     async deleteById(req, res) {
         res.json(await Product.deleteById(req.params.id))
-}
+    }
+    async getByCategory(req, res) {
+    res.json(await Product.getByCategory(req.params.category))
+    }   
 }
 
 module.exports =  ProductsController

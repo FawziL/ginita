@@ -12,7 +12,19 @@ const productSchema = new mongoose.Schema({
     precio:{
         type:Number,
         required: true,
-    }
+    },
+    descripcion:{
+        type:String,
+        required: true
+    },
+    category:{
+        type:String,
+        required: true
+    },
+    stock:{
+        type:Number,
+        required: true
+    },
 });
 
 

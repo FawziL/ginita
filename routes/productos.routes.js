@@ -15,6 +15,7 @@ class RouterProducts{
     router.put("/:id", this.controller.updateProducts);
     router.get("/:id", this.controller.getById);
     router.delete("/:id", this.controller.deleteById);
+    router.get('/category/:category', this.controller.getByCategory)
     
     return router;
   }

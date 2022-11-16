@@ -1,6 +1,7 @@
 const Cart = require("../models/carrito.model");
 const CustomError = require("../utils/CustomError")
-
+const DaoOrder = require("./orderMongo.dao.js")
+const Order = DaoOrder.getInstance();
 
 let instance;
 
@@ -25,7 +26,7 @@ class CartMongoDAO {
  
   getAll = async () => {
     try {
-        const allCarts = await this.collection.find()
+        const allCarts = await this.collection.find().lean()
         return allCarts   
     } catch (error) {
         return []
@@ -40,8 +41,6 @@ class CartMongoDAO {
   getProductsInCart = async(username) =>{
     try {
         const cart = await this.getByUsername(username)
-        console.log(username)
-        console.log(cart)
         if (!cart) {
           cart = new this.collection({
             username: username,
@@ -73,19 +72,18 @@ class CartMongoDAO {
       if (index > -1) {
           productos.splice(index, 1);}
       const updatedCart = await cart.updateOne({productos: productos});
-      console.log(productId)
       return updatedCart
     } catch (error) {
       throw new Error(`Error al modificar: ${error}`)
     } 
   }
 
-  buyCart = async (user) => {
+  buyCart = async (user, order) => {
       let cart = await this.collection.findOne({username: user.username})
       try{
           const orderArray = cart.productos
           const order = JSON.stringify(orderArray);
-          await transporter(order, user)
+          await Order.saveOrder(user.username, order)
           await cart.updateOne({ $set: { productos: [] } })
       }catch (error) {
           throw new Error(`${error}`)

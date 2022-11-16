@@ -8,7 +8,15 @@ const cartSchema = new mongoose.Schema({
     productos:{
         type:Array,
         required: true,
-    }
+    },  
+    timestamp: {
+        type:String,
+        required: true,
+    },
+    address: {
+        type:String,
+        required: true,
+    },
 });
 
 

@@ -4,3 +4,72 @@
 {"level":"error","message":"Error en servidor Error: listen EADDRINUSE: address already in use :::8080"}
 {"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 4460"}
 {"level":"error","message":"Error en servidor Error: listen EADDRINUSE: address already in use :::8080"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 8700"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 2328"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 11232"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 5340"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 3384"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 2520"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 6388"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 5796"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 6012"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 2992"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 9572"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 9472"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 9384"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 9784"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 7728"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 8000"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 2436"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 8496"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 8120"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 624"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 4668"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 3200"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 3508"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 10072"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 9036"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 10644"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 11224"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 10464"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 1312"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 6160"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 3500"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 7544"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 8184"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 10996"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 10316"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 672"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 12092"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 432"}
+{"level":"error","message":"Error: ReferenceError: transporter is not defined"}
+{"level":"error","message":"Error: ReferenceError: transporter is not defined"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 1720"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 6952"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 7480"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 8516"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 4936"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 9016"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 1076"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 3288"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 11380"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 2736"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 1304"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 2704"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 9908"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 6688"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 4424"}
+{"level":"error","message":"Error al mostrar ordenes"}
+{"level":"info","message":"Servidor http escuchando en el puerto 8080 - PID 12248"}

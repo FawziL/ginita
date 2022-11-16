@@ -21,9 +21,11 @@ const { fork } = require("child_process");
 const logger = require("./src/utils/logs/logger")
 const path = require("path")
 
+const MessagesController = require("./controllers/mensajes.controller")
 
 
-mongoose.connect(process.env.MONGO_URL);
+
+mongoose.connect(process.env.MONGO_URL, ()=> {console.log("Base de datos conectada")});
 
 app.use(cookieParser());
 
@@ -92,3 +94,14 @@ connectedServer.on('error', error => logger.error(`Error en servidor ${error}`))
 
 
 
+io.on('connection', async socket => {
+  
+  //Mensajes del chat
+  socket.emit('messages', await MessagesController.getAll());
+
+  socket.on('newMessage', async message => {
+      message.time = new Date().toLocaleString()
+      await MessagesController.save(message)
+      io.sockets.emit('messages', await MessagesController.getAll());
+  })
+})

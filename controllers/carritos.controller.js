@@ -14,7 +14,6 @@ class CartController {
         try {
             let productsInCart = await Cart.getProductsInCart(req.user.username)
             let valorInicial= 0
-            console.log(productsInCart)
             const total = productsInCart.reduce((sum, product) => sum + product.precio, valorInicial)
             res.render('cart', { productos: productsInCart, total: total })
           } catch (error) {
@@ -38,8 +37,7 @@ class CartController {
 
     async buyCarrito(req, res)  {
         try {
-            const usuario = await userController.getAcount({email: req.username})
-            console.log(usuario)
+            const usuario = await Cart.getByUsername(req.user.username)
             await Cart.buyCart(usuario)
             res.redirect('/productos');
             }

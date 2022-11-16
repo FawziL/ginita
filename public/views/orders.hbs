@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css'
+      rel='stylesheet'
+      integrity='sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx'
+      crossorigin='anonymous'
+    />
+    <link href='../style.css' rel='stylesheet' />
+    <title>Proyecto Backend</title>
+</head>
+<body>
+  {{> navbar }}
+  <div class=" container d-flex flex-wrap mt-5">
+    {{#each orders}} 
+      <div class='card m-3' style='width: 18rem;'>
+        <div class='card-body'>
+          <p class='card-text'>Fecha: {{timestamp}}</p>
+          <p class='card-text'>Número de Orden: {{numberOfOrder}}</p>
+          <p class='card-text'>Estado: {{status}}</p>
+         {{#each cart}}
+          <div class=" container d-flex flex-wrap mt-5">
+              <div class='card m-3' style='width: 18rem;'>
+                <img src='{{products.foto}}' class='card-img-top' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>{{products.nombre}}</h5>
+                  <p class='card-text'>Total: ${{products.total}}</p>
+                </div>
+              </div>
+          </div>
+        {{/each}}
+      </div>
+      </div>
+    {{/each}}
+  </div>
+  
+</body>
+</html>
+
+
+
+
+

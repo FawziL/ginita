@@ -1,3 +1,18 @@
 {"level":"error","message":"Error en servidor Error: listen EADDRINUSE: address already in use :::8080"}
 {"level":"error","message":"Error en servidor Error: listen EADDRINUSE: address already in use :::8080"}
 {"level":"error","message":"Error en servidor Error: listen EADDRINUSE: address already in use :::8080"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"TypeError: userController.getAcount is not a function"}
+{"level":"error","message":"Error: ReferenceError: transporter is not defined"}
+{"level":"error","message":"Error: ReferenceError: transporter is not defined"}
+{"level":"error","message":"Error al mostrar ordenes"}

@@ -31,8 +31,8 @@ class ProductMongoDAO {
     }
   }
   getById = async(id) => {
-    const doc = await this.collection.findById(id);
-    return doc || { error: 'producto no encontrado' }
+    const productById = await this.collection.findById(id);
+    return productById
 }
 
   
@@ -56,6 +56,10 @@ try {
     throw new Error(`Error al modificar: ${error}`)
 }
 } 
+getByCategory = async(category) => {
+  const productsByCategory = await this.collection.findById(category);
+  return productsByCategory 
+}
 
   static getInstance() {
     if (!instance) {
